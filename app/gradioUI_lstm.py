@@ -1,5 +1,5 @@
 
-# coherenteyes — Gradio app (LSTM-only)
+# coherenteyes — fake news detection using ltsm
 # Run: python app_gradio.py
 
 import os, re, json, pickle
