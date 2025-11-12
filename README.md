@@ -1,5 +1,3 @@
-# aisafety-fakenews
-
 # Project Summary — Fake News Detection Using LSTM and Traditional Machine Learning
 
 ## Objective
