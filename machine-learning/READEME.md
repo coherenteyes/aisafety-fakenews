@@ -5,7 +5,7 @@ This repository contains a machine-learning pipeline for detecting fake news on 
 
 ---
 
-## 1. Project Overview
+## Project Overview
 
 The notebook implements the following steps:
 
@@ -30,16 +30,6 @@ The notebook implements the following steps:
 SHAP is only applied to **Logistic Regression** and **XGBoost** due to computational constraints and compatibility.  
 Decision Tree and Random Forest are included as models but **not interpreted with SHAP** in this version.
 
----
-
-## 2. Dataset Information
-
-- **Dataset:** WELFake  
-- **File expected:** `WELFake_Dataset.csv`  
-- **Main columns**
-  - `title`
-  - `text`
-  - `label` (0 = real, 1 = fake)
 
 Place the file in the same folder as the notebook or adjust the path:
 
