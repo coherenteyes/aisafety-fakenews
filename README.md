@@ -1,4 +1,4 @@
-📄 WELFake Dataset 
+**📄 WELFake Dataset **
 
 WELFake is a large, balanced fake news dataset commonly used for machine learning and deep learning research on misinformation detection. It compiles articles from multiple open-source news datasets and applies unified preprocessing to provide a clean, reliable corpus.
 
