@@ -178,7 +178,10 @@ Contributions are welcome!
 Please ensure additions maintain:
 
 Clarity
+
 Reproducibility
+
 Transparency
+
 Safety alignment
 
