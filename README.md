@@ -10,7 +10,7 @@ designed with a strong emphasis on **explainability**, **transparency**, and **A
 
 ---
 
-# 📘 About This Project
+# About This Project
 
 **coherenteyes** is an AI Safety–oriented misinformation detection system that integrates  
 **classical machine learning**, **deep learning architectures**, and **SHAP explainability**  
@@ -28,7 +28,7 @@ The project demonstrates how explainable AI can be used to **audit model behavio
 
 ---
 
-# 📁 Repository Structure
+# Repository Structure
 
 aisafety-fakenews/
 │
@@ -54,13 +54,13 @@ aisafety-fakenews/
 
 ---
 
-# 🚀 Project Overview
+#  Project Overview
 
 The repository contains **two complete modeling pipelines**:
 
 ---
 
-## 🔷 1. Classical Machine Learning (TF–IDF Models)
+##  1. Classical Machine Learning (TF–IDF Models)
 
 Located in: `machine-learning/`
 
@@ -88,7 +88,7 @@ Outputs:
 
 ---
 
-## 🔷 2. Deep Learning Models (CNN, LSTM, BERT)
+##  2. Deep Learning Models (CNN, LSTM, BERT)
 
 Located in: `deep-learning/`
 
@@ -110,30 +110,30 @@ Outputs:
 
 ---
 
-# 📊 Model Performance Leaderboard
+# Model Performance Leaderboard
 
-## 🟦 Machine Learning Models
+## Machine Learning Models
 
 | Model | Accuracy | Macro F1 | SHAP Support |
 |-------|----------|-----------|--------------|
-| **Random Forest** | ⭐ 0.966 | ⭐ 0.966 | ❌ No |
-| **Linear SVM** | 0.965 | 0.965 | ❌ No |
-| **Logistic Regression** | 0.963 | 0.963 | ✅ Yes |
-| **AdaBoost** | 0.952 | 0.952 | ❌ No |
-| **XGBoost** | 0.941 | 0.941 | ✅ Yes |
-| Decision Tree | 0.898 | 0.899 | ❌ No |
-| Gaussian NB | 0.857 | 0.857 | ❌ No |
-| KNN (k=3) | 0.774 | 0.770 | ❌ No |
+| **Random Forest** | 0.966 | 0.966 | No |
+| **Linear SVM** | 0.965 | 0.965 |  No |
+| **Logistic Regression** | 0.963 | 0.963 |  Yes |
+| **AdaBoost** | 0.952 | 0.952 |  No |
+| **XGBoost** | 0.941 | 0.941 | Yes |
+| Decision Tree | 0.898 | 0.899 | No |
+| Gaussian NB | 0.857 | 0.857 | No |
+| KNN (k=3) | 0.774 | 0.770 | No |
 
-## 🟥 Deep Learning Models
+## Deep Learning Models
 
 | Model | Validation Accuracy | Validation Loss | SHAP Support |
 |--------|----------------------|------------------|--------------|
-| **CNN–LSTM (GloVe)** | ⭐ **0.9821** | ⭐ **0.0534** | ✅ Yes |
-| BERT + CNN | 0.9815 | 0.1190 | ❌ Too costly |
-| BERT + BiLSTM | 0.9813 | 0.0809 | ❌ Too costly |
-| CNN–PCA (GloVe) | 0.9805 | 0.0538 | ✅ Yes |
-| CNN (GloVe) | 0.9714 | 0.2470 | ❌ No |
+| **CNN–LSTM (GloVe)** |  **0.9821** |  **0.0534** |  Yes |
+| BERT + CNN | 0.9815 | 0.1190 |  Too costly |
+| BERT + BiLSTM | 0.9813 | 0.0809 |  Too costly |
+| CNN–PCA (GloVe) | 0.9805 | 0.0538 | Yes |
+| CNN (GloVe) | 0.9714 | 0.2470 |  No |
 
 
 
@@ -143,24 +143,24 @@ Outputs:
 
 coherenteyes focuses on the following safety principles:
 
-### ✔️ Transparency  
+###  Transparency  
 - SHAP explanations  
 - Token-level interpretability  
 - Attention visualization  
 
-### ✔️ Robustness  
+###  Robustness  
 Evaluated across:
 - Different architectures  
 - Long vs. short text  
 - Simple vs. complex features  
 
-### ✔️ Failure Mode Analysis  
+### Failure Mode Analysis  
 Identifies issues such as:
 - Dataset artifacts  
 - Keyword reliance  
 - Overconfidence  
 
-### ✔️ Responsible Deployment  
+### Responsible Deployment  
 Warns about the risks of:
 - False positives (unwanted censorship)  
 - False negatives (misinformation spread)  
@@ -168,7 +168,7 @@ Warns about the risks of:
 
 ---
 
-# ⚙️ Installation
+# Installation
 
 Install dependencies using pip:
 
