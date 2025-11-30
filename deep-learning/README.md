@@ -1,100 +1,71 @@
-Fake News Detection on WELFake (Deep Learning + SHAP for CNN–LSTM & CNN–PCA)
+# Fake News Detection on WELFake (Deep Learning + SHAP for CNN–LSTM & CNN–PCA)
 
-This directory contains the deep-learning pipeline for detecting fake news on the WELFake dataset using neural architectures. The notebooks (welfake-glove.ipynb, welfake-glove-with-shap.ipynb, and welfake_bert.ipynb) walk through data preprocessing, text embedding, training multi-architecture deep-learning models, and performing SHAP interpretability for selected models.
+This directory contains the **deep-learning pipeline** for detecting fake news on the **WELFake** dataset using neural network architectures. The notebooks (`welfake-glove.ipynb`, `welfake-glove-with-shap.ipynb`, and `welfake_bert.ipynb`) walk through data preprocessing, embedding construction, model training, evaluation, and interpretable analysis using **SHAP** for selected models.
 
-Project Overview
+---
 
-The notebooks implement the following workflow:
+## Project Overview
 
-Load and process text from the WELFake dataset
+The deep-learning workflow includes:
 
-Clean and prepare text for deep-learning models (tokenization, padding, sequence handling)
+- Loading and preprocessing text from the **WELFake** dataset  
+- Cleaning, tokenizing, padding, and preparing sequences for neural models  
+- Training multiple architectures:
+  - **CNN–LSTM (GloVe embeddings)**
+  - **CNN with PCA-reduced GloVe embeddings**
+  - **BERT-base** (transformer fine-tuning)
+- Providing **model interpretability** via:
+  - **SHAP for CNN–LSTM** (DeepExplainer / GradientExplainer depending on hardware)
+  - **SHAP for CNN–PCA** (SamplingExplainer for faster estimations)
+- Generating:
+  - Global attribution plots (SHAP summary)
+  - Local token-level explanations for individual predictions  
 
-Train and evaluate multiple deep architectures:
+**Note:**  
+SHAP is **not applied to BERT** due to high computational cost and memory requirements.  
+Transformers require expensive model-partitioning or sampling techniques, which are not feasible in limited-resource environments.
 
-CNN–LSTM (GloVe embeddings)
+---
 
-CNN with PCA-reduced GloVe embeddings
+## Model Summary
 
-BERT-base fine-tuning for document classification
+### **1. CNN–LSTM (GloVe)**
+- Uses pretrained **GloVe embeddings**
+- Extracts local n-gram patterns with **1D CNN**
+- Captures long-range dependencies using **LSTM**
+- Good balance of speed, accuracy, and interpretability
+- Compatible with SHAP for token-level explanations
 
-Integrate explainability using:
+### **2. CNN–PCA (GloVe)**
+- Applies **PCA** to compress 100d GloVe into lower dimensions  
+- Lightweight model with reduced compute requirements  
+- Extremely fast SHAP evaluation  
+- Suitable for resource-constrained environments
 
-SHAP for CNN–LSTM (DeepExplainer / GradientExplainer depending on GPU availability)
+### **3. BERT-base**
+- Transformer encoder with self-attention  
+- Fine-tuned on WELFake titles and body text  
+- Achieves highest predictive performance  
+- **Interpretability not included** due to SHAP constraints  
 
-SHAP for CNN–PCA (SamplingExplainer for lightweight explanations)
+---
 
-Visualize:
+## Interpretability with SHAP
 
-Global feature effects (summary plots)
+SHAP is used to interpret CNN–LSTM and CNN–PCA models:
 
-Local token-level SHAP attributions for individual predictions
+- **DeepExplainer** or **GradientExplainer** for CNN–LSTM  
+- **SamplingExplainer** for PCA-based models  
+- Outputs include:
+  - **Summary plots** identifying globally important words  
+  - **Force plots** showing how individual tokens push predictions toward FAKE or REAL  
+  - Insights into whether models rely on meaningful linguistic cues or dataset artifacts  
 
-Note:
-SHAP is not applied to BERT due to extremely high computational cost and memory requirements. Transformer-based SHAP typically requires:
+---
 
-multi-GPU or TPU resources,
+## Running the Models
 
-expensive sampling-based estimators,
+Place the dataset in the same directory or adjust the file path:
 
-model-partitioning techniques not feasible in constrained environments.
-
-Thus, SHAP explanations are only provided for CNN–LSTM and CNN–PCA in this version.
-
-Model Summary
-CNN–LSTM (GloVe)
-
-Word-level embeddings (100d GloVe)
-
-1D Convolution for local lexical pattern detection
-
-LSTM layer for long-sequence contextual modelling
-
-Dense layer for binary fake/real prediction
-
-CNN–PCA (GloVe)
-
-PCA-compressed embeddings for lower compute cost
-
-Lightweight CNN classifier
-
-Faster inference and significantly faster SHAP evaluation
-
-BERT-base
-
-Transformer encoder with self-attention
-
-Fine-tuned on WELFake titles + text
-
-Highest accuracy among models, but not SHAP-interpretable in this version
-
-Interpretability (SHAP)
-
-SHAP is used to provide model-agnostic and model-specific explanations:
-
-CNN–LSTM → DeepExplainer or GradientExplainer
-
-CNN–PCA → SamplingExplainer (low-cost fallback)
-
-Interpretability outputs include:
-
-SHAP summary plots showing globally influential tokens
-
-Force plots for local explanations of individual articles
-
-Analysis of whether models rely on meaningful linguistic patterns or dataset artifacts
-
-Running the Models
-
-Ensure the dataset is placed in the same directory or adjust the path:
-
+```python
 df = pd.read_csv("WELFake_Dataset.csv")
-
-
-Run the notebooks:
-
-welfake-glove.ipynb → CNN–LSTM
-
-welfake-glove-with-shap.ipynb → CNN–LSTM + SHAP
-
-welfake_bert.ipynb → BERT fine-tuning
