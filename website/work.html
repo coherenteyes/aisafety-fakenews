@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work - COHERENTEYES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">COHERENTEYES</a>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="definition.html">What is AI Safety?</a></li>
+                <li><a href="perils.html">Perils of AI</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="work.html" class="active">Our Work</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Our Work</h2>
+            
+            <div style="max-width: 800px; margin: 0 auto; text-align: center; margin-bottom: 3rem;">
+                <p class="intro-text">
+                    The rise of large-scale misinformation demands detection systems that are both accurate and safety-aligned. We argue that <strong>accuracy alone is insufficient</strong> for real-world deployment.
+                </p>
+            </div>
+    
+            <div class="career-reasons-grid"> 
+                
+                <div class="career-reason-card" style="text-align: center;">
+                    <h4 style="color: #00ff41; font-size: 2rem; margin-bottom: 0.5rem;">98%</h4>
+                    <p style="color: #fff; font-weight: bold; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">Accuracy Achieved</p>
+                    <p style="font-size: 0.9rem; color: #b0b0b0; line-height: 1.6;">
+                        Evaluated on the 
+                        <span class="term-trigger" tabindex="0">
+                            WELFake dataset
+                            <span class="term-panel">A large-scale dataset of 72,131 news articles used for training robust detection models.</span>
+                        </span>
+                        using hybrid architectures like
+                        <span class="term-trigger" tabindex="0">
+                            BERT-CNN
+                            <span class="term-panel"><strong>BERT-CNN:</strong> A powerful model that combines BERT (for understanding language context) with CNNs (for spotting key patterns).</span>
+                        </span>
+                        and 
+                        <span class="term-trigger" tabindex="0">
+                            CNN-LSTM
+                            <span class="term-panel"><strong>CNN-LSTM:</strong> A hybrid model that excels at analyzing both specific keywords and the flow of sentences over time.</span>
+                        </span>.
+                    </p>
+                </div>
+    
+                <div class="career-reason-card" style="text-align: center;">
+                    <h4 style="color: #00ff41; font-size: 2rem; margin-bottom: 0.5rem;">SHAP</h4>
+                    <p style="color: #fff; font-weight: bold; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">Explainability</p>
+                    <p style="font-size: 0.9rem; color: #b0b0b0; line-height: 1.6;">
+                        We moved beyond "black boxes" by integrating 
+                        <span class="term-trigger" tabindex="0">
+                            SHAP
+                            <span class="term-panel"><strong>SHapley Additive exPlanations:</strong> A method that highlights exactly which words or phrases caused the AI to flag an article as fake.</span>
+                        </span>
+                        to make the AI's reasoning more transparent
+                    </p>
+                </div>
+    
+                <div class="career-reason-card" style="text-align: center;">
+                    <h4 style="color: #00ff41; font-size: 2rem; margin-bottom: 0.5rem;">Models Used</h4>
+                    <p style="color: #fff; font-weight: bold; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">Comprehensive Testing</p>
+                    <p style="font-size: 0.9rem; color: #b0b0b0; line-height: 1.6;">
+                        We compared multiple
+                        <span class="term-trigger" tabindex="0">
+                            Machine Learning
+                            <span class="term-panel">Classical approaches like Random Forest and SVM that are highly interpretable and fast.</span>
+                        </span>
+                        and 
+                        <span class="term-trigger" tabindex="0">
+                            Deep Learning
+                            <span class="term-panel">Complex CNN and BERT-based models that offer higher accuracy but are harder to explain.</span>
+                        </span>
+                        models to find the best balance between raw power and safety.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="work-summary-container" style="margin-top: 4rem;">
+                <div class="pdf-preview" style="text-align: left; background: linear-gradient(145deg, #121212, #0a0a0a); border: 1px solid rgba(0, 255, 65, 0.2); padding: 3rem;">
+                    <div style="display: flex; gap: 3rem; flex-wrap: wrap; align-items: center;">
+                        
+                        <div style="flex: 2; min-width: 300px;">
+                            <h3 style="color: #00ff41; margin-bottom: 1rem; font-size: 1.8rem;">Abstract</h3>
+                            
+                            <p style="margin-bottom: 1rem; line-height: 1.8; color: #d0d0d0; font-size: 0.95rem;">
+                                The rise of large-scale misinformation, amplified by LLM-generated content, demands detection systems that are both accurate and safety-aligned. This work evaluates classical, ensemble, and Deep Learning models on the WELFake dataset and shows that hybrid CNN-LSTM and BERT-based architectures surpass 98% accuracy, outperforming traditional baselines.
+                            </p>
+                            
+                            <p style="margin-bottom: 1rem; line-height: 1.8; color: #d0d0d0; font-size: 0.95rem;">
+                                To ensure transparency and auditability, we integrate SHAP for unified, model-agnostic explanations that reveal key lexical and contextual drivers of predictions. Framed within an AI Safety perspective, the study highlights challenges such as distribution shift, adversarial manipulation, bias, and uncertainty calibration, arguing that accuracy alone is insufficient for real-world deployment.
+                            </p>
+    
+                            <p style="margin-bottom: 1.5rem; line-height: 1.8; color: #d0d0d0; font-size: 0.95rem;">
+                                The results provide a robust, interpretable, and safety-centric blueprint for trustworthy misinformation detection systems.
+                            </p>
+    
+                            <p style="margin-bottom: 1rem; color: #fff; font-weight: 600;">Access our full research findings, methodology, and models' performance.</p>
+                            
+                            <div class="button-group" style="justify-content: flex-start; justify-content: center; margin-top: 2rem;">
+                                <a href="COHERENTEYES_Report.pdf" target="_blank" class="btn-primary">View Report</a>
+                                <a href="COHERENTEYES_Report.pdf" download class="btn-secondary">Download PDF</a>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p><strong>COHERENTEYES</strong> — An AI Safety Project</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

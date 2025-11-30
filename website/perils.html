@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Perils of AI - COHERENTEYES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">COHERENTEYES</a>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="definition.html">What is AI Safety?</a></li>
+                <li><a href="perils.html" class="active">Perils of AI</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="work.html">Our Work</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <!-- Perils of AI Section (Horizontal Layout with Images) -->
+    <section id="perils" class="content-section dark-section">
+        <div class="container">
+            <h2 class="section-title">The Perils of AI: Why We Need AI Safety?</h2>
+            <p class="intro-text">AI has enormous potential to improve our lives. But like any powerful tool, without thoughtful safeguards, it can unintentionally cause significant harm.</p>
+
+            <!-- Peril 1: Autonomy Without Alignment -->
+            <div class="peril-horizontal">
+                <div class="peril-content">
+                    <h3>Autonomy Without Alignment</h3>
+                    <p class="peril-description">
+                        AI systems can be like literal-minded genies: they do exactly what we <em>ask</em>, not necessarily what we <em>want</em>.
+                    </p>
+                    
+                    <p class="peril-description" style="margin-top: 10px;">
+                        If we give an AI a goal like "clean the house" but fail to specify strict safety rules, it might find dangerous "loopholes" to achieve it (like throwing all your furniture out the window to clear the floor). In the industry, we call this <strong>Goal Misalignment</strong>: the AI technically follows instructions but violates human intent.
+                    </p>
+    
+                    <div class="peril-visual" style="margin-top: 1.5rem; width: 100%;">
+                        </div>
+                    <div class="peril-visual" style="margin-top: 1.5rem; width: 100%;">
+                        <figure style="margin: 0;">
+                            <img src="images/autonomy-1.png" alt="Chart showing Alignment vs Autonomy"
+                                 style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                            <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                The Goal: We need systems that are helpful (High Autonomy) but safe (High Alignment).
+                            </figcaption>
+                        </figure>
+                    </div>
+            
+                    <p class="peril-example">These real-world examples show what happens when that alignment fails:</p>
+            
+                    <div class="peril-visual" style="margin-top: 2rem; width: 100%;">
+                        <figure style="margin: 0;">
+                            <img src="images/autonomy-2.png" alt="Bing Sydney Chat Log"
+                                 style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                            <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                <strong><a href="https://therealjohntan.beehiiv.com/p/bing-chatbot-rattled-me" target="_blank" class="caption-link">The "Sydney" Incident:</a></strong> 
+                                An AI hallucinated a personality that tried to manipulate a user into leaving their spouse.
+                            </figcaption>
+                        </figure>
+                    </div>
+            
+                    <div class="peril-visual" style="margin-top: 2rem; width: 100%;">
+                        <figure style="margin: 0;">
+                            <img src="images/autonomy-3.png" alt="Tay Tweets Chat Log"
+                                 style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                            <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                <strong><a href="https://medium.com/@linjdiana/artificial-intelligence-and-machine-learning-similar-to-human-learning-317f6fc749e9" target="_blank" class="caption-link">Microsoft's Tay:</a></strong> 
+                                Designed to learn from Twitter, this bot turned toxic in under 24 hours because it lacked safety filters and was feeded with racist information by Twitter users.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="peril-visual" style="margin-top: 2rem; width: 100%;">
+                         <figure style="margin: 0;">
+                            <img src="images/autonomy-4.png" alt="Emotional Chat Log"
+                                 style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                            <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                <strong><a href="https://www.linkedin.com/posts/chiaragallesephd_chatgpt-did-it-again-i-cant-believe-it-activity-7395377733528170496-gYVr?utm_source=share&utm_medium=member_ios&rcm=ACoAAACkVukBih_5CPbOXYY3SVyakNcaGWCUjWc" target="_blank" 
+                                    class="caption-link">ChatGPT Incident:</a></strong> "Zane Shamblin was only 23 years old when he unalived himself in July, helped by ChatGPT."
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Peril 2: Bias and Fairness -->
+            <div class="peril-horizontal reverse">
+                <div class="peril-content">
+                    <h3>Bias and Fairness</h3>
+                    <p class="peril-description">
+                        We often assume computers are neutral, but AI is actually a mirror of the humans who build it.
+                    </p>
+                    
+                    <p class="peril-description" style="margin-top: 10px;">
+                        For example, AI learns by studying history, hiring records, loan approvals, and medical data. Because human history contains racism, sexism, and prejudice, the AI learns these patterns as "rules" to follow. 
+                        Unlike a single biased human, a biased AI can discriminate against millions of people in a fraction of a second.
+                    </p>
+            
+                    <div class="sectors-affected" style="margin-top: 1.5rem;">
+                        <strong>Real-World Impact:</strong>
+                        <ul style="margin-top: 0.5rem;">
+                            <li><strong>Healthcare:</strong> Diagnostic AI often underperforms for minority groups because it was trained mostly on data from lighter-skinned patients.</li>
+                            <div class="peril-visual" style="margin-top: 1rem; margin-bottom: 1rem;" width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/bias-3.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        How medicine discriminates against non-white people and women (<a href="https://www.economist.com/science-and-technology/2021/04/08/how-medicine-discriminates-against-non-white-people-and-women" target="_blank" class="caption-link">The Economist</a>)                                          
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <li><strong>Facial Recognition:</strong> Commercial facial-recognition systems from major tech giants have missed as many as 37% of darker-skinned faces while identifying lighter-skinned faces with near-perfect accuracy</li>
+                            <div class="peril-visual" style="margin-bottom: 1rem; width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/Bias and Fairness.png" 
+                                         style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        <strong><a href="https://www.linkedin.com/pulse/response-amazons-criticisms-our-mit-study-uncovered-bias-buolamwini" target="_blank" class="caption-link"> MIT's "Gender Shades" Project</a></strong> found similar disparities in Amazon, IBM, and Microsoft systems.
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                            <li><strong>Finance:</strong> <a href="https://newhampshirebulletin.com/2024/10/11/as-ai-takes-the-helm-of-decision-making-signs-of-perpetuating-historic-biases-emerge/" target="_blank" class="caption-link">Lending bots</a> have 
+                                recommended Black applicants be given higher interest rates, and labeled Black and Hispanic borrowers as “riskier.” White applicants were 8.5 percent more likely to be approved than Black applicants with the same financial profile.</li>
+                            <div class="peril-visual" style="margin-top: 1rem; margin-bottom: 1rem;" width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/bias-6.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        <a href="https://www.nber.org/digest/oct19/minority-borrowers-pay-more-even-under-algorithmic-lending?page=1&perPage=50" target="_blank" 
+                                        class="caption-link">"Minority Borrowers Pay More, Even under Algorithmic Lending"</a>                                       
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                            <li><strong>Hiring:</strong> <a href="https://www.forbes.com/sites/janicegassam/2025/08/08/your-ai-hiring-tool-might-be-racist-here-are-three-ways-to-address-ai-bias-and-make-hiring-more-fair/" target="_blank" class="caption-link">Popular models</a>
+                                used by many resume screening tools were reported that they significantly favored white-associated names; 
+                                further analysis also determined that Black males were disadvantaged in 100% of the cases.</li>
+                            <div class="peril-visual" style="margin-top: 1rem; margin-bottom: 1rem;" width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/bias-7.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        <a href="https://www.fisherphillips.com/en/news-insights/ai-resume-screeners.html" target="_blank" 
+                                        class="caption-link">"New Study Shows AI Resume Screeners Prefer White Male Candidates"s</a>                                      
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </ul>
+                    </div>
+            
+                    <div class="bias-types" style="margin-top: 2rem; background: rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 10px; border-left: 3px solid #00ff41;">
+                        <strong style="display: block; margin-bottom: 1rem; color: #00ff41;">Why Does This Happen? (4 Common Traps)</strong>
+                        
+                        <p style="margin-bottom: 0.8rem; margin-top: 1rem;">
+                            <strong>1. The "Missing Data" Trap (Sampling Bias):</strong><br>
+                            If you teach an AI what a "doctor" looks like using only photos of men, it will literally struggle to "see" a woman as a doctor.
+                        </p>
+
+                        <div class="peril-visual" style="margin-top: 0.5rem; "width: 100%;">
+                            <figure style="margin: 0;">
+                                <img src="images/bias-1.png" 
+                                        style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                    <a href="https://www.intechopen.com/chapters/1192227" target="_blank" class="caption-link">Models trained without sufficient representation (women, minorities) under-perform for those groups.</a>                                           
+                                </figcaption>
+                            </figure>
+                        </div>
+            
+                        <p style="margin-bottom: 0.8rem; margin-top: 1.25rem;">
+                            <strong>2. The "Cherry-Picking" Trap (Selection Bias):</strong><br>
+                            When data is collected in a way that accidentally excludes specific groups, leading to blind spots in the system's knowledge.
+                        </p>
+
+                        <div class="peril-visual" style="margin-top: 0.5rem; "width: 100%;">
+                            <figure style="margin: 0;">
+                                <img src="images/bias-2.jpg" 
+                                        style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                    <a href="https://www.sciencedirect.com/topics/medicine-and-dentistry/selection-bias" target="_blank" class="caption-link">If an AI is trained only on the specific group in the red box, it fails to understand the diversity of the real world (the blue box). 
+                                        It literally cannot "see" people it hasn't been shown.</a>                                           
+                                </figcaption>
+                            </figure>
+                        </div>
+            
+                        <p style="margin-bottom: 0.8rem; margin-top: 1.25rem;">
+                            <strong>3. The "Bad Ruler" Trap (Measurement Bias):</strong><br>
+                            Using data that was measured inconsistently or carries cultural assumptions (e.g., using arrest rates to predict crime risk, which reflects policing patterns, not just crime).
+                        </p>
+                        
+                        <div class="peril-visual" style="margin-top: 0.5rem; "width: 100%;">
+                            <figure style="margin: 0;">
+                                <img src="images/bias-4.png" 
+                                        style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                    <a href="https://cut-the-saas.com/learn-prompting-ai-bias" target="_blank" class="caption-link">If the tool used to collect data is flawed (like a broken ruler recording the wrong height), the AI learns "facts" that are actually errors, leading to incorrect decisions. </a>                                           
+                                </figcaption>
+                            </figure>
+                        </div>
+                        
+                        <p style="margin-bottom: 0.8rem; margin-top: 1.25rem;">
+                            <strong>4. The "Creator's Shadow" (Confirmation Bias):</strong><br>
+                            Developers unconsciously coding their own assumptions into the system, reinforcing patterns they believe to be true.
+                        </p>
+
+                        <div class="peril-visual" style="margin-top: 0.5rem; "width: 100%;">
+                            <figure style="margin: 0;">
+                                <img src="images/bias-5.png" 
+                                        style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                   <a href="https://cut-the-saas.com/learn-prompting-ai-bias" target="_blank" class="caption-link"> In this case, the movie recommendation system, based on a user's preference for thriller movies, continues to suggest more thriller movies, reinforcing the user's existing preference.</a>                                           
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Peril 3: Security and Control -->
+            <div class="peril-horizontal">
+                <div class="peril-content">
+                    <h3>Security and Control</h3>
+                    <p class="peril-description">
+                        We are used to protecting computers from passwords hacks, but AI introduces a new kind of vulnerability: <strong>hacking the "brain" itself.</strong> Because AI systems don't "see" the world like we do, they can be easily tricked by things a human would never fall for.
+                    </p>
+                    
+                    <div class="bias-types" style="margin-top: 1.5rem; background: rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 10px; border-left: 3px solid #00ff41;">
+                        <strong style="display: block; margin-bottom: 1rem; color: #00ff41;">The 3 Major Vulnerabilities:</strong>
+                        
+                        <p style="margin-bottom: 1rem;">
+                            <strong>1. The "Optical Illusion" (<a href="https://www.researchgate.net/publication/396921660_Adversarial_AI_The_Emerging_Cybersecurity_Threat_of_Machine_Learning_Manipulation
+                                " target="_blank" class="caption-link">Adversarial Manipulation</a>):</strong><br>
+                            Hackers can make small, invisible tweaks to an image—like adding static noise or a sticker—that force the AI to make a wrong prediction, even though it looks normal to humans. In a healthcare or other high-stakes setting, such attacks could cause a diagnostic system to mislabel a condition, or cause an autonomous vehicle to misinterpret a stop-sign, etc.
+                        </p>
+
+                        <div class="peril-visual" style="margin-top: 1rem; margin-bottom: 1rem;"width: 100%;">
+                            <figure style="margin: 0;">
+                                <img src="images/security-1.png" 
+                                        style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 5px;">
+                                    <strong><a href="https://gradientscience.org/intro_adversarial/" target="_blank" class="caption-link">The "Pig-to-Airliner" Hack:</a></strong> To a human eye, the image on the right is clearly a pig. 
+                                    But by adding invisible digital noise, the AI is completely tricked into classifying it as an "airliner."                                           
+                                </figcaption>
+                            </figure>
+                        </div>
+            
+                        <p style="margin-bottom: 1rem;">
+                            <strong>2. The "Sabotage" (<a href="https://www.ibm.com/think/topics/data-poisoning" target="_blank" class="caption-link">Data Poisoning</a>):</strong><br>
+                            If a bad actor can sneak "bad examples" into the AI's textbook (training data), they can teach the AI secret backdoors or incorrect behaviors that trigger later. 
+                            For example, in healthcare, a poisoning attack could make a diagnostic model systematically mis-diagnose a condition for a certain subgroup.
+                        </p>
+
+                        <div class="peril-visual" style="margin-top: 1rem; margin-bottom: 1rem;" width: 100%;">
+                            <figure style="margin: 0;">
+                                <img src="images/security-2.png" 
+                                        style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 5px;">
+                                        Read more about this <a href="https://www.geeksforgeeks.org/machine-learning/what-is-data-poisoning/" target="_blank" class="caption-link">here</a>                                           
+                                </figcaption>
+                            </figure>
+                        </div>
+                        
+                        <p style="margin-bottom: 0;">
+                            <strong>3. The "Copycat" Attack (<a href="https://medium.com/devsecops-ai/understanding-model-theft-risks-and-prevention-in-ai-b3f100aa6b63" target="_blank" class="caption-link">Model Theft</a>):</strong><br>
+                            Competitors can steal a company's expensive AI "brain" simply by asking it millions of questions and using the answers to rebuild a clone of the system.
+                        </p>
+
+                        <div class="peril-visual" style="margin-top: 1rem; margin-bottom: 1rem;" width: 100%;">
+                            <figure style="margin: 0;">
+                                <img src="images/security-3.png" 
+                                        style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                    <a href="https://www.theguardian.com/technology/2025/jan/29/openai-chatgpt-deepseek-china-us-ai-models" target="_blank" 
+                                    class="caption-link">OpenAI said it has evidence that DeepSeek used its proprietary model outputs via API to train a competing model — a form of model theft / cloning.</a>                                           
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+            
+                    <p class="peril-insight" style="margin-top: 1.5rem;">
+                        <strong>Why It Matters:</strong> As AI becomes the infrastructure for healthcare, transportation, and national security, safety and cybersecurity are becoming the same thing. 
+                        A compromised model doesn't just crash a computer—it can cause harm at a societal scale.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Peril 4: Information Integrity -->
+            <div class="peril-horizontal highlighted-peril-horizontal">
+                <div class="peril-content">
+                    <h3>Information Integrity: The Misinformation Crisis</h3>
+                    <p class="peril-description">
+                        AI has changed the rules of truth. It used to take skill and effort to forge a document or fake a photo. Now, AI creation tools allow anyone to generate infinite fake news articles, realistic voice clones, and "Deepfake" videos in seconds.
+                    </p>
+
+                    <div class="sectors-affected" style="margin-top: 1.5rem;">
+                        <strong>Why This is Dangerous:</strong>
+                        <ul style="margin-top: 0.5rem;">
+                            <li><strong>Public Health:</strong> The danger has shifted from simple rumors to medical impersonation and dangerous advice. Scammers now use AI to clone the voices and faces of trusted professionals to sell fraudulent products. Furthermore, patients relying on AI chatbots for diagnosis face direct physical harm due to 
+                                <span class="term-trigger" tabindex="0">
+                                    "hallucinations"
+                                    <span class="term-panel">
+                                        <strong>AI Hallucination:</strong> When an AI model confidently generates false information, inventing facts or sources that look real but have no basis in reality.
+                                    </span>
+                                </span>
+                                , where AI confidently invents dangerous medical treatments.</li>
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/fake-health-1.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        <a href="https://www.abc.net.au/news/science/2024-04-17/scammers-using-fake-ai-dr-karl-to-promote-health-products/103686044" target="_blank" class="caption-link">"Scammers are using a fake, AI-generated Dr Karl to sell health pills to Australians."</a>                                           
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/fake-health-2.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        <a href="https://www.abc.net.au/news/2025-09-04/pharmacists-photo-manipulated-in-social-media-weight-loss-advert/105698942" target="_blank" 
+                                        class="caption-link">"Pharmacist's stolen image used in 'dangerous' deepfake adverts for weight loss drug"</a>                                           
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/fake-health-3.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        <a href="https://www.cbsnews.com/news/deepfake-videos-impersonating-real-doctors-push-false-medical-advice-treatments/" target="_blank" 
+                                        class="caption-link">"Deepfake videos impersonating real doctors push false medical advice and treatments"</a>                                           
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/fake-health-4.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        Read this article <a href="https://www.reuters.com/business/healthcare-pharmaceuticals/its-too-easy-make-ai-chatbots-lie-about-health-information-study-finds-2025-07-01/" target="_blank" 
+                                        class="caption-link">here</a>                                           
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/fake-health-5.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        <a href="https://www.theguardian.com/technology/2025/aug/12/us-man-bromism-salt-diet-chatgpt-openai-health-information" target="_blank" 
+                                        class="caption-link">A man stopped using table salt (sodium chloride) based on ChatGPT advice, substituted sodium bromide, developed bromide toxicity (bromism), and ended up in the hospital.</a>                                           
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <li><strong>Identity Theft:</strong> Criminals can now use "Voice Cloning" to call your family sounding <em>exactly</em> like you to demand money.</li>
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/voice-1.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        Read this article <a href="https://www.bbc.com/news/articles/c1lg3ded6j9o" target="_blank" class="caption-link">here</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/voice-2.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        Read this article <a href="https://edition.cnn.com/2024/09/18/tech/ai-voice-cloning-scam-warning" target="_blank" class="caption-link">here</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <li><strong>Deepfakes:</strong> AI can now generate hyper-realistic video forgeries. This technology has evolved from simple internet tricks into a tool for viral hoaxes, political disinformation, and high-stakes financial fraud.</li>
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/deepfake-1.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        <a href="https://www.theguardian.com/culture/2025/may/30/meet-ernesto-the-viral-americas-got-talent-contestant-who-doesnt-exist" target="_blank" class="caption-link">Meet Ernesto, , the viral America’s Got Talent contestant … who doesn’t exist.</a>                                           
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/deepfake-2.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        <a href="https://www.theguardian.com/technology/2025/jun/29/fake-diddy-ai-videos-youtube" target="_blank" class="caption-link">"Fake, AI-generated videos about the Diddy trial are raking in millions of views on YouTube"</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/deepfake-3.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        Read this article <a href="https://edition.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk" target="_blank" class="caption-link">here</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/deepfake-4.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        Read this article <a href="https://www.bbc.com/news/articles/clyvj754d9lo" target="_blank" class="caption-link">here</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="peril-stats" style="margin-top: 1.5rem;">
+                                <strong>In Korea</strong>, the discovery of the existence of countless Telegram groups dedicated to deepfakes has shaken the country. 
+                                Young men share pornographic edits of female students, teachers, colleagues and even family members.
+                                The number of reported cases of deepfake porn has risen steadily in recent years, from 156 in 2021 to 180 in 2023 (<a href="https://www.theguardian.com/world/2024/sep/13/from-spy-cams-to-deepfake-porn-fury-in-south-korea-as-women-targeted-again" target="_blank" 
+                                class="caption-link">The Guardian</a>). 
+                            </div>
+
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/deepfake-5.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        <a href="https://www.lemonde.fr/en/pixels/article/2024/09/03/in-south-korea-young-people-are-victims-and-perpetrators-of-pornographic-deepfakes_6724640_13.html" target="_blank" 
+                                        class="caption-link">"A protester holds up a sign reading "Repeated deepfake sex crimes: the state is complicit," in Seoul, August 30, 2024."</a> ANTHONY WALLACE / AFP                                           
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/deepfake-7.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        <a href="https://www.theguardian.com/world/2024/sep/13/from-spy-cams-to-deepfake-porn-fury-in-south-korea-as-women-targeted-again" target="_blank" 
+                                        class="caption-link">South Korean activists protest against the rise of deepfake sexual crimes.</a> Photograph: Chung Sung-Jun/Getty Images                                   
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                            <div class="peril-stats" style="margin-top: 1.5rem;">
+                                <strong>"Deepfake Porn Is Out Of Control"</strong>
+                            </div>
+
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/deepfake-6.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        Matt Burgess' story on <a href="https://www.wired.com/story/deepfake-porn-is-out-of-control/" target="_blank" 
+                                        class="caption-link"">WIRED</a> posted in Oct 2023 shows that AI porn videos has grown at an alarming rate—244,625 videos at the time of writing.                                          
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/deepfake-8.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        Read this article <a href="https://www.theguardian.com/technology/2024/mar/21/celebrities-victims-of-deepfake-pornography" target="_blank" 
+                                        class="caption-link">here</a>                                           
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="peril-visual" style="margin-top: 2rem; "width: 100%;">
+                                <figure style="margin: 0;">
+                                    <img src="images/deepfake-9.png" 
+                                            style="width: 100%; height: auto; border-radius: 10px; border: 1px solid rgba(0, 255, 65, 0.3); box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                                    <figcaption style="color: #b0b0b0; font-style: italic; font-size: 0.9rem; text-align: center; margin-top: 10px;">
+                                        Read this article <a href="https://www.wired.com/story/florida-teens-arrested-deepfake-nudes-classmates/" target="_blank" 
+                                        class="caption-link">here</a>                                           
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="connection-box" style="margin-top: 2rem; border: 1px solid #00ff41; background: rgba(0, 255, 65, 0.05);">
+                        <p>Addressing this crisis requires advances in:</p>
+                        <ul style="list-style: none; padding-left: 0; margin-bottom: 1rem;">
+                            <li><span style="color: #00ff41; margin-right: 8px;">▸</span> <strong>Fake News Detection</strong></li>
+                            <li><span style="color: #00ff41; margin-right: 8px;">▸</span> <strong>Transparency and Model Auditing</strong></li>
+                            <li><span style="color: #00ff41; margin-right: 8px;">▸</span> <strong>Content Authentication</strong></li>
+                        </ul>
+                        <p style="font-weight: 700; color: #00ff41; border-top: 1px solid rgba(0,255,65,0.3); padding-top: 0.8rem; margin-top: 0.5rem;">
+                            This is a core focus of our work at COHERENTEYES.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section" style="margin-top: 6rem; padding-bottom: 2rem;">
+            <h2>Help Shape the Future of AI Safety</h2>
+            <p class="cta-description">
+                Addressing these challenges requires a dedicated community of researchers, engineers, and policy experts.
+            </p>
+            <br>
+            <a href="careers.html" class="cta-button">Explore Career Opportunities</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p><strong>COHERENTEYES</strong> — An AI Safety Project</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
