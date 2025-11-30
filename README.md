@@ -112,18 +112,24 @@ Outputs:
 
 # 📊 Model Performance Leaderboard
 
-(*Placeholder — fill in numerical values after experiments*)
+
 
 | Model | Type | Accuracy | Precision | Recall | F1-score | SHAP Support |
 |-------|------|----------|-----------|--------|----------|--------------|
-| **BERT-base** | Transformer | ⭐ Highest | ⭐ High | ⭐ High | ⭐ Highest | ❌ Too costly |
-| **CNN–LSTM (GloVe)** | Deep Learning | High | High | High | High | ✅ Yes |
-| **CNN–PCA (GloVe)** | Deep Learning | Medium–High | Medium | Medium | Medium | ✅ Yes |
-| **Logistic Regression** | Classical ML | Medium–High | Medium | Medium | Medium | ✅ Yes |
-| **XGBoost** | Classical ML | High | High | Medium–High | High | ✅ Yes |
-| **Random Forest** | Classical ML | Medium | Medium | Medium | Medium | ⚠️ Very slow |
-| **SVM (Linear)** | Classical ML | Medium | Medium | Medium | Medium | ❌ No |
-| **Naive Bayes** | Classical ML | Low–Medium | Low | Low | Low | ❌ No |
+| **CNN–LSTM (GloVe)** | Deep Learning | **0.9821** | N/A | N/A | **0.9821** (Val Acc) | ✅ Yes |
+| **BERT + CNN** | Transformer Hybrid | 0.9815 | N/A | N/A | 0.9815 | ❌ Too costly |
+| **BERT + BiLSTM** | Transformer Hybrid | 0.9813 | N/A | N/A | 0.9813 | ❌ Too costly |
+| **CNN–PCA (GloVe)** | Deep Learning | 0.9805 | N/A | N/A | 0.9805 | ✅ Yes |
+| **CNN (GloVe)** | Deep Learning | 0.9714 | N/A | N/A | 0.9714 | ✅ Yes |
+| **Random Forest** | Classical ML | **0.9660** | 0.966 | 0.966 | **0.966** | ❌ No |
+| **Linear SVM** | Classical ML | 0.9650 | 0.965 | 0.965 | 0.965 | ❌ No |
+| **Logistic Regression** | Classical ML | 0.9630 | 0.963 | 0.963 | 0.963 | ✅ Yes |
+| **AdaBoost** | Classical ML | 0.9520 | 0.952 | 0.952 | 0.952 | ❌ No |
+| **XGBoost** | Classical ML | 0.9410 | 0.941 | 0.941 | 0.941 | ✅ Yes |
+| **Decision Tree** | Classical ML | 0.8980 | 0.899 | 0.899 | 0.899 | ❌ No |
+| **Gaussian Naive Bayes** | Classical ML | 0.8570 | 0.857 | 0.857 | 0.857 | ❌ No |
+| **KNN (k=3)** | Classical ML | 0.7740 | 0.770 | 0.770 | 0.770 | ❌ No |
+
 
 ---
 
