@@ -1,8 +1,65 @@
 version = 1
-revision = 3
-requires-python = ">=3.13"
 
 [[package]]
-name = "rag-fn"
-version = "0.1.0"
-source = { virtual = "." }
+name = "numpy"
+version = "1.26.4"
+
+[[package]]
+name = "pandas"
+version = "2.2.1"
+
+[[package]]
+name = "scikit-learn"
+version = "1.4.0"
+
+[[package]]
+name = "xgboost"
+version = "2.0.3"
+
+[[package]]
+name = "tensorflow"
+version = "2.15.0"
+
+[[package]]
+name = "tensorflow-io-gcs-filesystem"
+version = "0.34.0"
+
+[[package]]
+name = "torch"
+version = "2.2.0"
+
+[[package]]
+name = "torchvision"
+version = "0.17.0"
+
+[[package]]
+name = "torchaudio"
+version = "2.2.0"
+
+[[package]]
+name = "transformers"
+version = "4.40.0"
+
+[[package]]
+name = "tokenizers"
+version = "0.15.2"
+
+[[package]]
+name = "shap"
+version = "0.44.1"
+
+[[package]]
+name = "matplotlib"
+version = "3.8.3"
+
+[[package]]
+name = "seaborn"
+version = "0.13.2"
+
+[[package]]
+name = "jupyter"
+version = "1.0.0"
+
+[[package]]
+name = "ipykernel"
+version = "6.29.0"
