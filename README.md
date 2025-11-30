@@ -112,23 +112,29 @@ Outputs:
 
 # 📊 Model Performance Leaderboard
 
+## 🟦 Machine Learning Models
 
+| Model | Accuracy | Macro F1 | SHAP Support |
+|-------|----------|-----------|--------------|
+| **Random Forest** | ⭐ 0.966 | ⭐ 0.966 | ❌ No |
+| **Linear SVM** | 0.965 | 0.965 | ❌ No |
+| **Logistic Regression** | 0.963 | 0.963 | ✅ Yes |
+| **AdaBoost** | 0.952 | 0.952 | ❌ No |
+| **XGBoost** | 0.941 | 0.941 | ✅ Yes |
+| Decision Tree | 0.898 | 0.899 | ❌ No |
+| Gaussian NB | 0.857 | 0.857 | ❌ No |
+| KNN (k=3) | 0.774 | 0.770 | ❌ No |
 
-| Model | Type | Accuracy | Precision | Recall | F1-score | SHAP Support |
-|-------|------|----------|-----------|--------|----------|--------------|
-| **CNN–LSTM (GloVe)** | Deep Learning | **0.9821** | N/A | N/A | **0.9821** (Val Acc) | ✅ Yes |
-| **BERT + CNN** | Transformer Hybrid | 0.9815 | N/A | N/A | 0.9815 | ❌ Too costly |
-| **BERT + BiLSTM** | Transformer Hybrid | 0.9813 | N/A | N/A | 0.9813 | ❌ Too costly |
-| **CNN–PCA (GloVe)** | Deep Learning | 0.9805 | N/A | N/A | 0.9805 | ✅ Yes |
-| **CNN (GloVe)** | Deep Learning | 0.9714 | N/A | N/A | 0.9714 | ✅ Yes |
-| **Random Forest** | Classical ML | **0.9660** | 0.966 | 0.966 | **0.966** | ❌ No |
-| **Linear SVM** | Classical ML | 0.9650 | 0.965 | 0.965 | 0.965 | ❌ No |
-| **Logistic Regression** | Classical ML | 0.9630 | 0.963 | 0.963 | 0.963 | ✅ Yes |
-| **AdaBoost** | Classical ML | 0.9520 | 0.952 | 0.952 | 0.952 | ❌ No |
-| **XGBoost** | Classical ML | 0.9410 | 0.941 | 0.941 | 0.941 | ✅ Yes |
-| **Decision Tree** | Classical ML | 0.8980 | 0.899 | 0.899 | 0.899 | ❌ No |
-| **Gaussian Naive Bayes** | Classical ML | 0.8570 | 0.857 | 0.857 | 0.857 | ❌ No |
-| **KNN (k=3)** | Classical ML | 0.7740 | 0.770 | 0.770 | 0.770 | ❌ No |
+## 🟥 Deep Learning Models
+
+| Model | Validation Accuracy | Validation Loss | SHAP Support |
+|--------|----------------------|------------------|--------------|
+| **CNN–LSTM (GloVe)** | ⭐ **0.9821** | ⭐ **0.0534** | ✅ Yes |
+| BERT + CNN | 0.9815 | 0.1190 | ❌ Too costly |
+| BERT + BiLSTM | 0.9813 | 0.0809 | ❌ Too costly |
+| CNN–PCA (GloVe) | 0.9805 | 0.0538 | ✅ Yes |
+| CNN (GloVe) | 0.9714 | 0.2470 | ❌ No |
+
 
 
 ---
