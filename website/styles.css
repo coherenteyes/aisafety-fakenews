@@ -355,6 +355,31 @@ html {
     transform: translateY(-3px);
 }
 
+/* --- GITHUB BUTTON --- */
+.btn-github {
+    padding: 1rem 2.5rem; /* Slightly wider than standard buttons */
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    
+    /* Default State: Clean White (distinguishes code from report) */
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3); 
+    color: #e0e0e0;
+}
+
+/* Hover State: Neon Green Glow */
+.btn-github:hover {
+    border-color: #00ff41;
+    color: #00ff41;
+    background: rgba(0, 255, 65, 0.05);
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+    transform: translateY(-3px);
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.4);
+}
+
 /* Careers Section */
 .career-subsection {
     margin: 3rem 0;
