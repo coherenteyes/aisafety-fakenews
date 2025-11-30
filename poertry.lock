@@ -1,0 +1,83 @@
+[[package]]
+name = "numpy"
+version = "1.26.4"
+category = "main"
+
+[[package]]
+name = "pandas"
+version = "2.2.1"
+category = "main"
+
+[[package]]
+name = "scikit-learn"
+version = "1.4.0"
+category = "main"
+
+[[package]]
+name = "xgboost"
+version = "2.0.3"
+category = "main"
+
+[[package]]
+name = "tensorflow"
+version = "2.15.0"
+category = "main"
+
+[[package]]
+name = "tensorflow-io-gcs-filesystem"
+version = "0.34.0"
+category = "main"
+
+[[package]]
+name = "torch"
+version = "2.2.0"
+category = "main"
+
+[[package]]
+name = "torchvision"
+version = "0.17.0"
+category = "main"
+
+[[package]]
+name = "torchaudio"
+version = "2.2.0"
+category = "main"
+
+[[package]]
+name = "transformers"
+version = "4.40.0"
+category = "main"
+
+[[package]]
+name = "tokenizers"
+version = "0.15.2"
+category = "main"
+
+[[package]]
+name = "shap"
+version = "0.44.1"
+category = "main"
+
+[[package]]
+name = "matplotlib"
+version = "3.8.3"
+category = "main"
+
+[[package]]
+name = "seaborn"
+version = "0.13.2"
+category = "main"
+
+[[package]]
+name = "jupyter"
+version = "1.0.0"
+category = "main"
+
+[[package]]
+name = "ipykernel"
+version = "6.29.0"
+category = "main"
+
+[metadata]
+lock-version = "2.0"
+python-versions = ">=3.10"
