@@ -30,6 +30,7 @@ The project demonstrates how explainable AI can be used to **audit model behavio
 
 # Repository Structure
 
+```text
 aisafety-fakenews/
 │
 ├── data/
@@ -50,7 +51,7 @@ aisafety-fakenews/
 ├── uv.lock
 │
 └── README.md (this file)
-
+```
 
 ---
 
@@ -139,7 +140,7 @@ Outputs:
 
 ---
 
-# 🧠 AI Safety Design Principles
+# AI Safety Design Principles
 
 coherenteyes focuses on the following safety principles:
 
@@ -178,7 +179,9 @@ pip install -r requirements.txt
 If you use this repository in your research, cite:
 coherenteyes (2025). AI Safety–Aligned Fake News Detection.
 
-🤝 Contributing
+---
+
+# Contributing
 
 Contributions are welcome!
 Please ensure additions maintain:
